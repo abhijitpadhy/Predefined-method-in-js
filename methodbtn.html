@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            text-align: center;
+            background-color: aqua;
+
+        }
+        .res{
+
+            margin-top: 100px;
+            color:blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u>Predefined method in javascript</u></h1>
+<h1 id="res" class="res"></h1>
+<div class="btn">
+<button onclick="pop()">pop</button>
+<button onclick="push()">push</button>
+<button onclick="slice()">slice</button>
+<button onclick="reverse()">reverse</button>
+<button onclick="shift()">shift</button>
+</div>
+</body>
+<script>
+    var fruits = ['mango','apple','grapes'];
+    var demo = fruits;
+    document.getElementById("res").innerText=demo;
+    function pop(){
+        demo.pop();
+        document.getElementById("res").innerText=demo;
+  
+    }
+    function push(){
+        var x= prompt("please enter a fruit");
+        demo.push(x);
+        document.getElementById("res").innerText=demo;
+  
+    }
+    function slice(){
+        
+       var y = demo.slice(1);
+        document.getElementById("res").innerText=y;
+  
+    }
+    function reverse(){
+        
+        var y = demo.reverse();
+         document.getElementById("res").innerText=y;
+   
+     }
+     function shift(){
+        
+        var y = demo.shift();
+         document.getElementById("res").innerText=y;
+   
+     }
+</script>
+</html>
